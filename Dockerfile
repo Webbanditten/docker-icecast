@@ -14,7 +14,7 @@ RUN set + \
   sed -i 's/ -d//' /etc/cron-apt/action.d/3-download 
 
 CMD ["/start.sh"]
-EXPOSE 8000
+EXPOSE 80
 VOLUME ["/config", "/var/log/icecast2", "/etc/icecast2"]
 
 ADD ./start.sh /start.sh
